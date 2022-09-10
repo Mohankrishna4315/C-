@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int matOne[2][2], matTwo[2][2], matSub[2][2], i, j;
+    cout<<"Enter 4 Elements for First Matrix: ";
+    for(i=0; i<2; i++)
+    {
+        for(j=0; j<2; j++)
+            cin>>matOne[i][j];
+    }
+    cout<<"Enter4 Elements for Second Matrix: ";
+    for(i=0; i<2; i++)
+    {
+        for(j=0; j<2; j++)
+            cin>>matTwo[i][j];
+    }
+    for(i=0; i<2; i++)
+    {
+        for(j=0; j<2; j++)
+            matSub[i][j] = matOne[i][j] - matTwo[i][j];
+    }
+    cout<<"\nThe New Matrix (Subtraction Result) is:\n";
+    for(i=0; i<2; i++)
+    {
+        for(j=0; j<2; j++)
+            cout<<matSub[i][j]<<"  ";
+        cout<<endl;
+    }
+    cout<<endl;
+    return 0;
+}
